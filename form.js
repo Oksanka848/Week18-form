@@ -26,11 +26,11 @@ document.getElementById ('error').innerHTML+= "Отчество?<br>";
 if (reg_email.value == '') {
     document.getElementById ('error').innerHTML+= "Ваша почта?<br>";
 }        
-if (birthday.value == '') {
+if (birthday.value  == '') {
 document.getElementById ('error').innerHTML+= "Ваша дата рождения?<br>";
 } 
-else {
-alert(`Добро пожаловать, ${reg_first_name.value} !`)};
+
+alert(`Добро пожаловать, ${reg_first_name.value} !`);
 }
 
 

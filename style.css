@@ -20,7 +20,10 @@ body {
   margin-top: 5px;
   display: block;
 }
-
+.base-input__control--type-email:required :valid {
+  border-color: rgb(15, 2, 27);
+  border: 3px;
+}
 .mb20 {
   margin-bottom: 20px !important;
 }
