@@ -114,7 +114,6 @@ p {
   flex-shrink: 0;
 }
 .base-checkbox.is-checked .base-checkbox__box .base-checkbox__icon {
-  opacity: 1;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -139,7 +138,6 @@ p {
   opacity: 0;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  fill: #fff;
 }
 .oauth-panel__brand {
   height: 100%;
