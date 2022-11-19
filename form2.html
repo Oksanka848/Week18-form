@@ -150,6 +150,7 @@
                                               class="base-input base-input--type-email"
                                             >
                                               <input
+                                              oninput="ValidateEmail()"
                                                 id="reg_email"
                                                 type="email"
                                                 name="email"
@@ -194,9 +195,9 @@
                                         <label class="form-label">Пол</label>
                                         <div class="switcher">
                                           <button type="button"
-                                            class="switcher__control" id="male" onclick="selgender()">
+                                            class="switcher__control" id="male" onclick="changeColor()" >
                                             <span >Мужской</span></button>
-                                            <button type="button" class="switcher__control" id="female" onclick="selgender()" >
+                                            <button type="button" class="switcher__control" id="female" onclick="changeColor()" >
                                             <span >Женский</span>
                                           </button>
                                         </div>
@@ -216,7 +217,7 @@
                                     </button>
                                     <button type="button"
                                       class="base-btn base-btn--theme-primary base-btn--size-md base-btn--xspace-lg"
-                                     id="click" onclick="check()">
+                                     id="click" onclick="checkAll()">
                                       <span class="base-btn__inner">Далее</span>
                                     </button>
                                   </div>

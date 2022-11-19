@@ -20,6 +20,9 @@ body {
   margin-top: 5px;
   display: block;
 }
+.form-error {
+  color: #da383f;
+}
 .base-input__control--type-email:required :valid {
   border-color: rgb(15, 2, 27);
   border: 3px;
@@ -546,13 +549,13 @@ img {
   padding: 0 20px;
   border: 1px solid #cbcbcb;
 }
-.base-input__control--theme-second::-webkit-input-placeholder {
+.base-input__control--theme-second:-webkit-input-placeholder {
   color: #6e6e6e;
 }
-.base-input__control--theme-second::-moz-placeholder {
+.base-input__control--theme-second:-moz-placeholder {
   color: #6e6e6e;
 }
-.base-input__control--theme-second::placeholder {
+.base-input__control--theme-second:placeholder {
   color: #6e6e6e;
 }
 .base-input__control--theme-second:-ms-input-placeholder {
