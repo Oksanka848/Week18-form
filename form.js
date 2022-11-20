@@ -16,7 +16,7 @@ button.addEventListener("click", function() {
     checkAll();
     ValidateEmail(reg_email);
     changeColor();
-    checkDate();
+    checkDate(birthday);
   })
 
 function checkAll(){
@@ -71,7 +71,7 @@ function ValidateEmail(reg_email) {
     }
 }
 
-function checkDate(birthday) {
+/*function checkDate() {
         let pattern = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
 let date= new Date();
 if (birthday == "" || birthday == null||!pattern.test(birthday)) {
@@ -85,8 +85,18 @@ else if(new Date(birthday).getTime() > date.getTime()){
 else{
     alert("valid date");
 }
+}*/
+function checkDate(birthday) {
+var date_regex = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
+if (birthday.value.match(date_regex)) {
+    /*alert("valid date");*/
+    return true;
 }
-
+else {
+    alert("Неправильный формат даты!");
+    return false;
+}
+}
 
 function changeColor(){
     let i=0;
